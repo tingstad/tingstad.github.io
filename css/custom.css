@@ -23,14 +23,15 @@ img {
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
-  background-image: url('../images/SeaRose_FPSO_and_offshore_support_vessels.jpg');
+  background-image: url('../tinghus1.jpg');
   background-size: cover;
   color: #fff;
   padding-bottom: 5rem;
 }
 .value-multiplier {
   margin-bottom: .5rem;
-  color: #11DFC7;
+  /*color: #11DFC7;*/
+  color: #fff;
 }
 .value-heading {
   margin-bottom: .3rem;
@@ -52,7 +53,7 @@ img {
 /* Categories
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .categories {
-  background-image: url('../images/aurora-borealis-lofoten-norway-night.jpg');
+  background-image: url('../tinghus2.jpg');
   background-size: cover;
   color: #fff;
 }
