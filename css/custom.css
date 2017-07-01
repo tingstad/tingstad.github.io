@@ -27,7 +27,7 @@ a {
 .hero {
   background-image: url('../ulsrudvann.jpg');
 }
-.hero h4,p {
+.hero h4, .hero p {
   text-align: left;
 }
 .hero h4 {
@@ -67,6 +67,12 @@ a {
   background-size: cover;
   color: #fff;
   padding-bottom: 5rem;
+}
+.values a {
+  color: #fff;
+}
+.values h2 {
+  font-weight: 600;
 }
 .value-multiplier {
   margin-bottom: .5rem;
