@@ -63,7 +63,10 @@ a {
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
-  background-image: url('../tinghus1.jpg');
+  background-image: linear-gradient(
+      rgba(80, 0, 0, 0.5),
+      rgba(80, 0, 0, 0.5)
+    ), url('../tinghus1.jpg');
   background-size: cover;
   color: #fff;
   padding-bottom: 5rem;
