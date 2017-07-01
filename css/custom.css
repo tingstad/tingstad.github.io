@@ -34,7 +34,7 @@ a {
   font-weight: 600;
 }
 .hero h4,span {
-  background: rgba(33,33,33);
+  background: rgb(33,33,33);
   color: #fff;
   padding: 1rem;
 }
