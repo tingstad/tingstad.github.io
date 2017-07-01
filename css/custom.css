@@ -9,6 +9,10 @@ img {
    border:2px solid #ffffff;
 }
 
+a {
+  color: #222222;
+}
+
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
@@ -18,6 +22,42 @@ img {
 .section-heading,
 .section-description {
   margin-bottom: 1.2rem;
+}
+
+.hero {
+  background-image: url('../ulsrudvann.jpg');
+}
+.hero h4,p {
+  text-align: left;
+}
+.hero h4 {
+  font-weight: 600;
+}
+.hero h4,span {
+  background: rgba(33,33,33);
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Invitasjon
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#invitasjon {
+  color: #222222;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+.invitasjonsbilde {
+  background-image: url('../invitasjonsbilde.jpg');
+  margin-bottom: .5rem;
+  /*color: #11DFC7;*/
+  color: #fff;
+}
+.value-heading {
+  margin-bottom: .3rem;
+}
+.value-description {
+  opacity: .8;
+  font-weight: 300;
 }
 
 /* Values
@@ -85,10 +125,16 @@ img {
   }
 }
 
+@media (max-width: 800px) {
+  #invitasjonstekst, #invitasjonsbilde {
+    clear: both;
+  }
+}
+
 /* Bigger than 750 */
 @media (min-width: 750px) {
   .hero {
-    height: 190px;
+    height: 220px;
   }
   .hero-heading {
     font-size: 2.6rem;
