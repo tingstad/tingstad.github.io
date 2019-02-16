@@ -1,10 +1,11 @@
 {
   "name": "hei",
   "version": "1.0.0",
-  "description": "",
+  "description": "hei",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/tingstad/tingstad.github.io/issues"
   },
-  "homepage": "https://github.com/tingstad/tingstad.github.io#readme"
+  "homepage": "https://github.com/tingstad/tingstad.github.io#readme",
+  "devDependencies": {
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
 }
