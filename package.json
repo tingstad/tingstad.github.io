@@ -19,7 +19,11 @@
   },
   "homepage": "https://github.com/tingstad/tingstad.github.io#readme",
   "devDependencies": {
-    "webpack": "^4.29.4",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "webpack": "4.29.3", //4.29.4 depends on Git for (dcodeIO)long via webassembly
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14"
   }
