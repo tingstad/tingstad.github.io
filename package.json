@@ -18,6 +18,10 @@
     "url": "https://github.com/tingstad/tingstad.github.io/issues"
   },
   "homepage": "https://github.com/tingstad/tingstad.github.io#readme",
+  "dependencies": {
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",

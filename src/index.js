@@ -1,2 +1,11 @@
-console.log('hei, verden');
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const title = 'Tittelen';
+
+ReactDOM.render(
+  <div>{title}</div>,
+  document.getElementById('app')
+);
+
 
