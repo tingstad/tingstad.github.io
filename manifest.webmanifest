@@ -1,0 +1,15 @@
+{
+  "name": "Rutetabell",
+  "short_name": "Ruter",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "The best",
+  "icons": [{
+    "src": "timetable192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }],
+  "related_applications": [
+  ]
+}
