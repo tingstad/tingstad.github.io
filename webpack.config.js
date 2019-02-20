@@ -1,8 +1,11 @@
 const path = require('path');
 const webpack = require('webpack');
 
-module.exports = {
-  entry: './src/index.js',
+const config = {
+  entry: {
+    app: './src/index.js',
+    sw: './src/serviceworker.js'
+  },
   module: {
     rules: [
       {
@@ -18,14 +21,20 @@ module.exports = {
   output: {
     path: __dirname + '/dist',
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin()
-  ],
   devServer: {
     contentBase: './dist',
     host: '0.0.0.0',
     hot: true
   }
 };
+module.exports = (env, argv) => {
+  if (argv.mode !== 'production') {
+    config.plugins = [
+      new webpack.HotModuleReplacementPlugin()
+    ];
+  }
+  return config;
+};
+
