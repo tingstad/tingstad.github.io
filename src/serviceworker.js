@@ -3,7 +3,7 @@ const expectedCaches = ['static-v2'];
 self.addEventListener('install', event => {
   //self.skipWaiting();
   event.waitUntil(
-    caches.open('static-v1')
+    caches.open('static-v2')
       .then(cache => cache.addAll(['/', '/dist/app.js', '/dist/data']))
   );
 });
