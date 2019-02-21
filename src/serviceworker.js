@@ -23,7 +23,7 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
   if (url.origin == location.origin && url.pathname == '/dist/data') {
-    event.respondWith(caches.match('/dist//data'));
+    event.respondWith(caches.match('/dist/data'));
   } else {
     event.respondWith(
       caches.match(event.request).then(function(response) {
