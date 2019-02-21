@@ -4,7 +4,7 @@ self.addEventListener('install', event => {
   //self.skipWaiting();
   event.waitUntil(
     caches.open('static-v1')
-      .then(cache => cache.addAll(['/data']))
+      .then(cache => cache.addAll(['/dist/data']))
   );
 });
 
@@ -22,8 +22,8 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
-  if (url.origin == location.origin && url.pathname == '/data') {
-    event.respondWith(caches.match('/data'));
+  if (url.origin == location.origin && url.pathname == '/dist/data') {
+    event.respondWith(caches.match('/dist//data'));
   } else {
     event.respondWith(
       caches.match(event.request).then(function(response) {
