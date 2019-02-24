@@ -6,7 +6,7 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(cacheName)
       .then(cache => {
-        cache.addAll(['/', '/dist/app.js', '/dist/data']);
+        cache.addAll(['/dist/app.js', '/dist/data']);
         cache.put('/version', new Response(`version; ${cacheName} ${new Date()}`));
       })
   );
