@@ -5,7 +5,7 @@
         <title>Tittel</title>
         <script>
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('dist/sw.js');
+                navigator.serviceWorker.register('dist/sw.js', { scope: '/' });
             }
         </script>
     </head>
