@@ -19,12 +19,12 @@ const config = {
     extensions: ['*', '.js', '.jsx']
   },
   output: {
-    path: __dirname + '/dist',
+    path: __dirname + '/',
     publicPath: '/',
     filename: '[name].js'
   },
   devServer: {
-    contentBase: './dist',
+    contentBase: './',
     host: '0.0.0.0',
     hot: true
   }

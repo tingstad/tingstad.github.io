@@ -6,7 +6,7 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(cacheName)
       .then(cache => {
-        cache.addAll(['/dist/app.js', '/dist/data']);
+        cache.addAll(['/app.js', '/data']);
         cache.put('/version', new Response(`version; ${cacheName} ${new Date()}`));
       })
   );
@@ -26,8 +26,8 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
-  if (url.origin == location.origin && url.pathname == '/dist/data') {
-    const response = caches.match('/dist/data');
+  if (url.origin == location.origin && url.pathname == '/data') {
+    const response = caches.match('/data');
     event.respondWith(response);
   } else {
     event.respondWith(
