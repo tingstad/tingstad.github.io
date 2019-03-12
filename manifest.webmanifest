@@ -4,7 +4,8 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fff",
-  "description": "The best",
+  "theme_color": "#e60000",
+  "description": "Rutetabell",
   "icons": [{
     "src": "timetable192.png",
     "sizes": "192x192",
