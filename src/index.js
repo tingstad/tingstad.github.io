@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 const title = 'Tittelen';
 
 ReactDOM.render(
-  <div>{title}</div>,
+  <div id="title">{title}</div>,
   document.getElementById('app')
 );
 
