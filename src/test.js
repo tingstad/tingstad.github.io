@@ -20,3 +20,10 @@ test('title element', async () => {
   expect(text).toBe('Tittelen');
 });
 
+test('version endpoint', async () => {
+  const page = await browser.newPage();
+  await page.goto('http://localhost:8080/version');
+  const text = await page.evaluate(() => document.body.innerText);
+  expect(text.substring(0,41)).toEqual(`version; static-v3 ${new Date()}`.substring(0,41));
+});
+
