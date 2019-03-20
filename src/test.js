@@ -22,6 +22,7 @@ test('title element', async () => {
 
 test('version endpoint', async () => {
   const page = await browser.newPage();
+  await page.setOfflineMode(true);
   await page.goto('http://localhost:8080/version');
   const text = await page.evaluate(() => document.body.innerText);
   const min = str => str.substring(0, str.lastIndexOf(':'));
